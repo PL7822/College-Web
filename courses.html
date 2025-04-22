@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Our College</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Style */
+        body {
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+
+        /* Navigation Menu Style */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* Courses Section Style */
+        section#courses {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section#courses h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        section#courses ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        section#courses ul li {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        section#courses ul li a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section#courses ul li a:hover {
+            color: #333;
+        }
+
+        .course-details {
+            display: none;
+            margin-top: 15px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Our College Courses
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="courses">
+        <h2>Our Offered Courses</h2>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="toggleCourseDetails('bca')">BCA (Bachelor of Computer Applications)</a></li>
+            <div id="bca" class="course-details">
+                <h3>Course Duration:</h3>
+                <p>3 Years</p>
+                <h3>Eligibility:</h3>
+                <p>10+2 with Mathematics</p>
+                <h3>Course Overview:</h3>
+                <p>This course focuses on computer science and applications, preparing students for a career in software development, programming, and IT industries.</p>
+            </div>
+
+            <li><a href="javascript:void(0);" onclick="toggleCourseDetails('bsc')">BSc (Bachelor of Science)</a></li>
+            <div id="bsc" class="course-details">
+                <h3>Course Duration:</h3>
+                <p>3 Years</p>
+                <h3>Eligibility:</h3>
+                <p>10+2 with Science</p>
+                <h3>Course Overview:</h3>
+                <p>The BSc course offers a solid foundation in the sciences, with specializations in areas such as Physics, Chemistry, Biology, or Mathematics.</p>
+            </div>
+
+            <li><a href="javascript:void(0);" onclick="toggleCourseDetails('ba')">BA (Bachelor of Arts)</a></li>
+            <div id="ba" class="course-details">
+                <h3>Course Duration:</h3>
+                <p>3 Years</p>
+                <h3>Eligibility:</h3>
+                <p>10+2 in any stream</p>
+                <h3>Course Overview:</h3>
+                <p>The BA program offers various humanities subjects including English, History, Political Science, and Sociology, providing students with a broad understanding of the world.</p>
+            </div>
+
+            <li><a href="javascript:void(0);" onclick="toggleCourseDetails('bcom')">BCom (Bachelor of Commerce)</a></li>
+            <div id="bcom" class="course-details">
+                <h3>Course Duration:</h3>
+                <p>3 Years</p>
+                <h3>Eligibility:</h3>
+                <p>10+2 in Commerce</p>
+                <h3>Course Overview:</h3>
+                <p>The BCom course focuses on commerce, accounting, finance, and economics, preparing students for careers in business, banking, and finance.</p>
+            </div>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our College. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle the display of course details
+        function toggleCourseDetails(courseId) {
+            var details = document.getElementById(courseId);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Gallery</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Style */
+        body {
+            background-color: #f4f7fc;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+
+        /* Navigation Menu Style */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* Gallery Section Style */
+        section#gallery {
+            margin-top: 20px;
+        }
+
+        section#gallery h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        section#gallery p {
+            text-align: center;
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Gallery Grid Layout */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 0 10px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Our College Gallery
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="gallery">
+        <h2>Explore Our Campus Through Pictures</h2>
+        <p>Here are some moments captured during various events and activities at our college.</p>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <img src="image1.jpg" alt="Campus Image 1">
+            <img src="image2.jpg" alt="Campus Image 2">
+            <img src="image3.jpg" alt="Campus Image 3">
+            <img src="image4.jpg" alt="Campus Image 4">
+            <img src="image5.jpg" alt="Campus Image 5">
+            <img src="image6.jpg" alt="Campus Image 6">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
