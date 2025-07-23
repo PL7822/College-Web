@@ -1,4 +1,4 @@
-<img width="1909" height="1042" alt="image" src="https://github.com/user-attachments/assets/4833db27-ea33-4a77-922a-852f3209f1ff" />
+
 # College Website
 
 A simple and static college website project created using only HTML and CSS. This is a basic web design layout suitable for any educational institute.
