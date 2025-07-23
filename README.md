@@ -1,4 +1,4 @@
-# College-Web
+<img width="1909" height="1042" alt="image" src="https://github.com/user-attachments/assets/4833db27-ea33-4a77-922a-852f3209f1ff" />
 # College Website
 
 A simple and static college website project created using only HTML and CSS. This is a basic web design layout suitable for any educational institute.
@@ -24,7 +24,8 @@ A simple and static college website project created using only HTML and CSS. Thi
 - Informative sections for college-related content
 
 ## 🌐 Live Demo
-(You can host this on Netlify or GitHub Pages and paste the link here)
+![Website Screenshot](Screenshot%202025-07-23%20130529.png)
+
 
 ## 📥 How to Use
 1. Clone or download the repository
